@@ -1,5 +1,7 @@
 import random
 
+# implement networking
+
 class Snake:
     directions = {"up":[0,1],
                   "down":[0,-1],
@@ -138,7 +140,7 @@ class Grid:
         return position
     
     def draw(self):
-        # draw the snake(s) and then draw the food
+        # draw the snake(s) and then draw the food using pygame
         pass
         
 
