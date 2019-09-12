@@ -1,6 +1,7 @@
 import random
 
 # implement networking
+# implement graphics
 
 class Snake:
     directions = {"up":[0,1],
