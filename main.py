@@ -2,6 +2,7 @@ import random
 
 # implement networking
 # implement graphics
+# improve grid efficiency
 
 class Snake:
     directions = {"up":[0,1],
