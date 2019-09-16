@@ -4,6 +4,7 @@ import random
 # implement graphics
 # improve grid efficiency
 # improve readability
+# change how direction is handled
 
 class Snake:
     directions = {"up":[0,1],
