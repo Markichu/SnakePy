@@ -6,6 +6,7 @@ import random
 # improve readability
 # change how direction is handled
 # change how the objects interact
+# comply with PEPs
 
 class Snake:
     directions = {"up":[0,1],
