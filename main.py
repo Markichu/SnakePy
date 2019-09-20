@@ -7,6 +7,7 @@ import random
 # change how direction is handled
 # change how the objects interact
 # make the game live
+# comply with PEPs
 
 class Snake:
     directions = {"up":[0,1],
