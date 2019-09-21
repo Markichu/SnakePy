@@ -8,6 +8,7 @@ import random
 # change how the objects interact
 # make the game live
 # comply with PEPs
+# have async controls
 
 class Snake:
     directions = {"up":[0,1],
