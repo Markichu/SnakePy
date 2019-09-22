@@ -9,6 +9,7 @@ import random
 # make the game live
 # comply with PEPs
 # have async controls
+# use a development branch to make changes
 
 class Snake:
     directions = {"up":[0,1],
