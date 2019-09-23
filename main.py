@@ -10,6 +10,7 @@ import random
 # comply with PEPs
 # have async controls
 # use a development branch to make changes
+# change how the nodes work
 
 class Snake:
     directions = {"up":[0,1],
