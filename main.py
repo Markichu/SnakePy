@@ -11,6 +11,7 @@ import random
 # have async controls
 # use a development branch to make changes
 # change how the nodes work
+# work on code clarity
 
 class Snake:
     directions = {"up":[0,1],
