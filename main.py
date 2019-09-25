@@ -12,6 +12,7 @@ import random
 # use a development branch to make changes
 # change how the nodes work
 # work on code clarity
+# change how objects are removed
 
 class Snake:
     directions = {"up":[0,1],
