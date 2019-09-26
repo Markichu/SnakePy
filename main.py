@@ -13,6 +13,7 @@ import random
 # change how the nodes work
 # work on code clarity
 # change how objects are removed
+# remove comments that are old
 
 class Snake:
     directions = {"up":[0,1],
