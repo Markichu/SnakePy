@@ -14,6 +14,7 @@ import random
 # work on code clarity
 # change how objects are removed
 # remove comments that are old
+# change how objects are initialised
 
 class Snake:
     directions = {"up":[0,1],
