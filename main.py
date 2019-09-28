@@ -15,6 +15,7 @@ import random
 # change how objects are removed
 # remove comments that are old
 # change how objects are initialised
+# use less lines of code
 
 class Snake:
     directions = {"up":[0,1],
