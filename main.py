@@ -17,6 +17,7 @@ import random
 # change how objects are initialised
 # use less lines of code
 # use better names
+# consider not using nodes
 
 class Snake:
     directions = {"up":[0,1],
