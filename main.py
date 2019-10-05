@@ -18,7 +18,7 @@ import random
 # use less lines of code
 # use better names
 # consider not using nodes
-# change the constructors
+# change the constructors to set variables outside
 
 class Snake:
     directions = {"up":[0,1],
