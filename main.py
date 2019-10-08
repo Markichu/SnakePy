@@ -1,6 +1,6 @@
 import random
 
-# implement networking
+# implement networking potentially using websockets
 # implement graphics
 # improve grid efficiency
 # improve readability
