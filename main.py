@@ -17,7 +17,7 @@ import random
 # change how objects are initialised
 # use less lines of code
 # use better names for variables
-# consider not using nodes
+# consider not using nodes and using another researched system
 # change the constructors to set variables outside
 # remove these comments after the implementation
 
