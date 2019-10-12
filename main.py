@@ -1,7 +1,7 @@
 import random
 
 # implement networking potentially using websockets
-# implement graphics
+# implement graphics using a library like pygame
 # improve grid efficiency
 # improve readability
 # change how direction is handled
