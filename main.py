@@ -6,7 +6,7 @@ import random
 # improve readability
 # change how direction is handled
 # change how the objects interact
-# make the game realtime
+# make the game realtime so it runs smoothly
 # comply with a PEP
 # have async controls
 # use a development branch to make changes
