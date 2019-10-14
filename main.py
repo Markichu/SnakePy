@@ -3,7 +3,6 @@ import random
 # implement networking potentially using websockets
 # implement graphics using a library like pygame
 # improve grid efficiency
-# improve readability
 # change how direction is handled
 # change how the objects interact
 # make the game realtime so it runs smoothly
@@ -11,7 +10,7 @@ import random
 # have async controls
 # use a development branch to make changes
 # change how the nodes work
-# work on code clarity
+# work on code clarity/readability
 # change how objects are removed
 # remove comments that are old
 # change how objects are initialised
