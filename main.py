@@ -5,9 +5,8 @@ import random
 # improve grid efficiency
 # change how direction is handled
 # change how the objects interact
-# make the game realtime so it runs smoothly
+# make the game realtime so it runs smoothly (asyn control)
 # comply with a PEP
-# have async controls
 # use a development branch to make changes
 # change how the nodes work
 # work on code clarity/readability
