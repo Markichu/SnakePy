@@ -19,6 +19,7 @@ import random
 # change the constructors to set variables outside
 # remove these comments after the implementation
 
+
 class Snake:
     directions = {"up":[0,1],
                   "down":[0,-1],
@@ -28,7 +29,7 @@ class Snake:
                   "d":[0,-1],
                   "l":[-1,0],
                   "r":[1,0]}
-    
+
     def __init__(self, x, y, length=5):
         self.snake_nodes = [[x, y]]
         self.direction = [0,1] # positive y movement "up"
@@ -36,7 +37,7 @@ class Snake:
         self.length = length
         for i in range(self.length-1):
             self.add_segment()
-        
+
     def move(self):
         # prepend the new head position
         self.snake_nodes[0:0] = [[self.snake_nodes[0][0]+self.direction[0],self.snake_nodes[0][1]+self.direction[1]]]
@@ -60,6 +61,7 @@ class Snake:
     def die(self):
         self.dead = True
 
+
 class Food:
 
     def __init__(self, x, y):
@@ -67,6 +69,7 @@ class Food:
 
     def get_position(self):
         return self.position
+
 
 class Grid:
     grid_w = 20
@@ -77,7 +80,7 @@ class Grid:
         self.grid_h = h if h > 0 else Grid.grid_h
         self.snakes = [snake]
         self.food = []
-        
+
     def add_snake(self, snake):
         self.snakes.append(snake)
 
@@ -114,15 +117,19 @@ class Grid:
             pos = food.get_position()
             grid[pos[0]][pos[1]] = -1
         return grid
-    
+
     def print(self):
         grid = [[0 for x in range(self.grid_w)] for y in range(self.grid_h)]
         old_grid = self.get_grid()
-        for x,row in enumerate(old_grid): # make it visually make sense
-            for y,value in enumerate(row):
+        output = ['' for y in range(self.grid_h)]
+        icons = ['-', 'x', 'o']
+        for x, row in enumerate(old_grid): # make it visually make sense
+            for y, value in enumerate(row):
                 y = self.grid_h - (y+1)
                 grid[y][x] = value
-        print(grid)
+                output[y] += icons[value]
+        print('\n'.join(output))
+        #print(grid)
         return grid
 
     def remove_dead_snakes(self):
@@ -142,12 +149,12 @@ class Grid:
 
     def get_cell_type(self, position):
         return get_grid()[position[0]][position[1]]
-        
+
     def random_empty_position(self):
         grid = self.get_grid()
         empty_positions = []
-        for x,row in enumerate(grid): # make it visually make sense
-            for y,value in enumerate(row):
+        for x, row in enumerate(grid): # make it visually make sense
+            for y, value in enumerate(row):
                 if value == 0:
                     empty_positions.append([x,y])
         if empty_positions:
@@ -155,11 +162,11 @@ class Grid:
         else:
             position = None
         return position
-    
+
     def draw(self):
         # draw the snake(s) and then draw the food using pygame
         pass
-        
+
 
 snake = Snake(5, 5, 5)
 food = Food(10, 10)
@@ -179,4 +186,3 @@ while running:
     if len(grid.snakes) < 1 or len(grid.food) < 1:
         print("Game Finished")
         running = False
-    
